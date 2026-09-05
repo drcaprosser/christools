@@ -18,8 +18,6 @@ knitr::opts_chunk$set(
 <!-- badges: start -->
 <!-- badges: end -->
 
-A package to put useful functions in so I can stop re-writing them all the time. There are currently two functions here: `inv_logit()`, which transforms log-odds into probabilities, and `collapse_with_and()`, which formats values as a grammatical list.
-
 ## Installation
 
 I made this for myself, but if anyone else wants to use it, you can install christools like so:
@@ -28,4 +26,30 @@ I made this for myself, but if anyone else wants to use it, you can install chri
 # install.packages("remotes")
 
 remotes::install_github("drcaprosser/christools")
+```
+
+## Functions
+
+### `inv_logit()`
+
+Transforms log-odds into probabilities.
+
+``` r
+inv_logit(c(-2, -1, 0, 1, 2))
+```
+
+### `collapse_with_and()`
+
+Formats values as a grammatical list, with optional connectors and serial commas.
+
+``` r
+collapse_with_and(c("apples", "bananas", "pears"))
+# [1] "apples, bananas, and pears"
+
+collapse_with_and(
+  c("apples", "bananas", "pears"),
+  connector = "or",
+  serial_comma = FALSE
+)
+# [1] "apples, bananas or pears"
 ```
