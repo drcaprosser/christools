@@ -5,7 +5,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-A package to put useful functions in so I can stop re-writing them all the time. There are currently two functions here: `inv_logit()`, which transforms log-odds into probabilities, and `nice_list_of_numbers()`, which formats a numeric vector as a grammatical list.
+A package to put useful functions in so I can stop re-writing them all the time. There are currently two functions here: `inv_logit()`, which transforms log-odds into probabilities, and `collapse_with_and()`, which formats values as a grammatical list.
 
 ## Installation
 
