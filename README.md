@@ -59,6 +59,24 @@ mix_hex("#E69F00", "#56B4E9")
 mix_hex("#E69F00", "#56B4E9", alpha = 0.25)
 ```
 
+### `nice_number()`
+
+Formats numbers for concise in-text reporting, using decimal places for larger
+values and significant digits for values below one.
+
+``` r
+nice_number(c(12.345, 0.123, 0.000001122113123))
+# [1] "12.3" "0.1" "0.000001"
+
+nice_number(
+  c(12.345, 0.123, 0.000001122113123),
+  digits = 2,
+  small_digits = 3,
+  trim_leading_zero = TRUE
+)
+# [1] "12.35" ".123" ".00000112"
+```
+
 ### `pop_sd()`
 
 Calculates the population standard deviation.
