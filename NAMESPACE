@@ -3,4 +3,5 @@
 export(collapse_with_and)
 export(get_decade)
 export(inv_logit)
+export(mix_hex)
 importFrom(lubridate,year)

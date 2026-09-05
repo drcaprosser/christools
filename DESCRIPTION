@@ -5,6 +5,7 @@ Authors@R:
     person("Chris", "Prosser", , "chris.prosser@rhul.ac.uk", role = c("aut", "cre"))
 Description: Somewhere to put helpful functions so I stop rewriting the same code over and over.
 Imports:
+    colorspace,
     lubridate
 License: MIT + file LICENSE
 Encoding: UTF-8

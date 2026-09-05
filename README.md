@@ -49,3 +49,12 @@ Returns the first year of the decade for each date.
 get_decade(as.Date(c("1974-06-01", "1989-01-01", "2026-09-05")))
 # [1] 1970 1980 2020
 ```
+
+### `mix_hex()`
+
+Mixes two hexadecimal colours at a specified proportion.
+
+``` r
+mix_hex("#E69F00", "#56B4E9")
+mix_hex("#E69F00", "#56B4E9", alpha = 0.25)
+```
