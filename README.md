@@ -1,20 +1,15 @@
-
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
 # christools
 
 <!-- badges: start -->
-
 <!-- badges: end -->
 
-A package to put useful functions in so I can stop re-writing them all
-the time. There’s only one thing here at the moment, `inv_logit()`,
-which transforms log-odds into probabilities.
+A package to put useful functions in so I can stop re-writing them all the time. There are currently two functions here: `inv_logit()`, which transforms log-odds into probabilities, and `nice_list_of_numbers()`, which formats a numeric vector as a grammatical list.
 
 ## Installation
 
-I made this for myself, but if anyone else wants to use it, you can
-install christools like so:
+I made this for myself, but if anyone else wants to use it, you can install christools like so:
 
 ``` r
 # install.packages("remotes")
