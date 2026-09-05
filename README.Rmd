@@ -71,3 +71,47 @@ Mixes two hexadecimal colours at a specified proportion.
 mix_hex("#E69F00", "#56B4E9")
 mix_hex("#E69F00", "#56B4E9", alpha = 0.25)
 ```
+
+### `pop_sd()`
+
+Calculates the population standard deviation.
+
+``` r
+pop_sd(c(1, 2, 3, 4))
+```
+
+### `approx_text()`
+
+Expresses non-negative numbers as short approximate phrases.
+
+``` r
+approx_text(c(0, 0.25, 3.2, 1250000))
+```
+
+### `number_to_word()`
+
+Converts whole numbers from zero to ten into words.
+
+``` r
+number_to_word(c(0, 5, 10, 11))
+```
+
+### `xtile()`
+
+Divides values into quantile intervals, with an option for labelled boundaries.
+
+``` r
+xtile(1:100, n = 4, labels = TRUE)
+```
+
+### `cut_breaks_labelled()`
+
+Cuts values into explicitly defined, labelled intervals.
+
+``` r
+cut_breaks_labelled(
+  c(3, 17, 42),
+  breaks = c(0, 10, 20, 50),
+  last_plus = TRUE
+)
+```

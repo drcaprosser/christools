@@ -6,7 +6,9 @@ Authors@R:
 Description: Somewhere to put helpful functions so I stop rewriting the same code over and over.
 Imports:
     colorspace,
-    lubridate
+    dplyr,
+    lubridate,
+    purrr
 License: MIT + file LICENSE
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
